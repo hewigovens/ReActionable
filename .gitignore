@@ -22,3 +22,4 @@ Carthage/
 xcuserdata/
 *.xcuserdatad/
 output/
+node_modules/
