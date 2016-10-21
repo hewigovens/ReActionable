@@ -12,9 +12,12 @@
 		BB51C0961DB9FD2400522150 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB51C0941DB9FD2400522150 /* Main.storyboard */; };
 		BB51C0981DB9FD2400522150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB51C0971DB9FD2400522150 /* Assets.xcassets */; };
 		BB51C09B1DB9FD2400522150 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB51C0991DB9FD2400522150 /* LaunchScreen.storyboard */; };
+		DAC3D10C91AF3357CC013FD2 /* Pods_ReActionable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBD3621210E38E7BF748476 /* Pods_ReActionable.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00D60C298D9618D17448EBAD /* Pods-ReActionable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReActionable.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReActionable/Pods-ReActionable.release.xcconfig"; sourceTree = "<group>"; };
+		ADBD3621210E38E7BF748476 /* Pods_ReActionable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReActionable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB51C08D1DB9FD2400522150 /* ReActionable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReActionable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB51C0901DB9FD2400522150 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB51C0921DB9FD2400522150 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		BB51C0971DB9FD2400522150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB51C09A1DB9FD2400522150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB51C09C1DB9FD2400522150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3A64C0E6251E6C979194A13 /* Pods-ReActionable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReActionable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReActionable/Pods-ReActionable.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC3D10C91AF3357CC013FD2 /* Pods_ReActionable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3150A47BB58CCDA116C0139A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADBD3621210E38E7BF748476 /* Pods_ReActionable.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BB51C0841DB9FD2400522150 = {
 			isa = PBXGroup;
 			children = (
 				BB51C08F1DB9FD2400522150 /* ReActionable */,
 				BB51C08E1DB9FD2400522150 /* Products */,
+				CC5A3F375F4DE123CAB8D42A /* Pods */,
+				3150A47BB58CCDA116C0139A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = ReActionable;
 			sourceTree = "<group>";
 		};
+		CC5A3F375F4DE123CAB8D42A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3A64C0E6251E6C979194A13 /* Pods-ReActionable.debug.xcconfig */,
+				00D60C298D9618D17448EBAD /* Pods-ReActionable.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB51C09F1DB9FD2400522150 /* Build configuration list for PBXNativeTarget "ReActionable" */;
 			buildPhases = (
+				A395D319BDC47151CCBE4407 /* [CP] Check Pods Manifest.lock */,
 				BB51C0891DB9FD2400522150 /* Sources */,
 				BB51C08A1DB9FD2400522150 /* Frameworks */,
 				BB51C08B1DB9FD2400522150 /* Resources */,
+				ECF4D73BCDA29AF94C8E62A4 /* [CP] Embed Pods Frameworks */,
+				2E8624FC068AEE43AFF340EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E8624FC068AEE43AFF340EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReActionable/Pods-ReActionable-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A395D319BDC47151CCBE4407 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ECF4D73BCDA29AF94C8E62A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReActionable/Pods-ReActionable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BB51C0891DB9FD2400522150 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -182,6 +257,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -232,6 +308,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -259,6 +336,7 @@
 		};
 		BB51C0A01DB9FD2400522150 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3A64C0E6251E6C979194A13 /* Pods-ReActionable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FH9QG7ZJR9;
@@ -272,6 +350,7 @@
 		};
 		BB51C0A11DB9FD2400522150 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D60C298D9618D17448EBAD /* Pods-ReActionable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FH9QG7ZJR9;
@@ -302,6 +381,7 @@
 				BB51C0A11DB9FD2400522150 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

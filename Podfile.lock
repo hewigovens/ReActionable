@@ -1,0 +1,41 @@
+PODS:
+  - React/ART (0.35.0):
+    - React/Core
+  - React/Core (0.35.0)
+  - React/RCTActionSheet (0.35.0):
+    - React/Core
+  - React/RCTGeolocation (0.35.0):
+    - React/Core
+  - React/RCTImage (0.35.0):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTLinkingIOS (0.35.0):
+    - React/Core
+  - React/RCTNetwork (0.35.0):
+    - React/Core
+  - React/RCTText (0.35.0):
+    - React/Core
+  - React/RCTWebSocket (0.35.0):
+    - React/Core
+
+DEPENDENCIES:
+  - React/ART (from `node_modules/react-native`)
+  - React/Core (from `node_modules/react-native`)
+  - React/RCTActionSheet (from `node_modules/react-native`)
+  - React/RCTGeolocation (from `node_modules/react-native`)
+  - React/RCTImage (from `node_modules/react-native`)
+  - React/RCTLinkingIOS (from `node_modules/react-native`)
+  - React/RCTNetwork (from `node_modules/react-native`)
+  - React/RCTText (from `node_modules/react-native`)
+  - React/RCTWebSocket (from `node_modules/react-native`)
+
+EXTERNAL SOURCES:
+  React:
+    :path: node_modules/react-native
+
+SPEC CHECKSUMS:
+  React: d80af5410aa500d0cb1bce2cc4493a584cf2ec92
+
+PODFILE CHECKSUM: 0905cd169f4f6bb7f0f93983567498b586917bb3
+
+COCOAPODS: 1.1.0.rc.2
